@@ -1,0 +1,9 @@
+wesnoth:
+    image: oalbiez/wesnothd
+    ports:
+    - ip: wesnoth.poloper.org
+      container_port: 15000
+      host_port: 15000
+    hostname: wesnoth
+    limits:
+      memory: 1G
