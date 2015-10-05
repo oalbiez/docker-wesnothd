@@ -7,7 +7,7 @@ RUN apt-get update \
  && apt-get clean
 
 RUN locale-gen en_US.UTF-8 fr_FR.UTF-8\
- && echo "deb http://fr.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse" >> /etc/apt/sources.list \
+ && echo "deb http://archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse" >> /etc/apt/sources.list \
  && apt-get update \
  && apt-get install -y wesnoth-1.12-server wget \
  && apt-get clean \
