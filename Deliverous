@@ -7,3 +7,6 @@ wesnoth:
     hostname: wesnoth
     limits:
       memory: 1G
+    environment:
+      PASSWD: {{.PASSWD}}
+      MOTD: Welcome on the poloper's game server
